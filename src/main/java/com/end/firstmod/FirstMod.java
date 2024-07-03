@@ -1,9 +1,9 @@
 package com.end.firstmod;
 
 
-import com.end.firstmod.ItemsTrial.ModCreativeTab;
-import com.end.firstmod.ItemsTrial.NewItems;
-import com.end.firstmod.blockTrial.ModBlocks;
+import com.end.firstmod.item.ModCreativeTab;
+import com.end.firstmod.item.NewItems;
+import com.end.firstmod.block.ModBlocks;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;

@@ -1,13 +1,17 @@
-package com.end.firstmod.blockTrial;
+package com.end.firstmod.block;
 
 import com.end.firstmod.FirstMod;
-import com.end.firstmod.ItemsTrial.NewItems;
+import com.end.firstmod.item.NewItems;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Instrument;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.NoteBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,9 +22,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FirstMod.MOD_ID);
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("rubyblock",
-            ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_BLOCK).
-                    sound(SoundType.AMETHYST).
-                    strength(3.0f, 7.f)
+            ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.AMETHYST).strength(1.5f, 6.0f)
                     .requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

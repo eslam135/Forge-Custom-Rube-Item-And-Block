@@ -1,4 +1,4 @@
-package com.end.firstmod.ItemsTrial;
+package com.end.firstmod.item;
 
 import com.end.firstmod.FirstMod;
 import net.minecraft.world.item.Item;
