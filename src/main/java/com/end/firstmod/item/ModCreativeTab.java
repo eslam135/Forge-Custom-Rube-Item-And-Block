@@ -14,7 +14,7 @@ public class ModCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> rubies_items = CREATIVE_MOD_TAB.register("titanium_tab",
+    public static final RegistryObject<CreativeModeTab> titanium_tab = CREATIVE_MOD_TAB.register("titanium_tab",
             () -> CreativeModeTab.builder().title(Component.translatable("creativetab.titanium_tab")).
                     icon(() -> new ItemStack(NewItems.TITANIUM_INGOT.get()))
                     .displayItems(((pParameters, pOutput) -> {
@@ -22,6 +22,7 @@ public class ModCreativeTab {
                         pOutput.accept(NewItems.RAW_TITANIUM.get());
                         pOutput.accept(ModBlocks.TITANIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.TITANIUM_ORE.get());
+                        pOutput.accept(ModBlocks.DEEP_SLATE_TITANIUM_ORE.get());
                     }))
                     .build());
 

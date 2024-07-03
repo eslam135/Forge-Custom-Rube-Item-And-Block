@@ -23,6 +23,9 @@ public class ModBlocks {
             ));
         public static final RegistryObject<Block> TITANIUM_ORE = registerBlock("titanium_ore",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+
+            ));        public static final RegistryObject<Block> DEEP_SLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
             ));
 
 
