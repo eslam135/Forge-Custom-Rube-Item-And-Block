@@ -1,6 +1,7 @@
 {
-  "item.firstmod.rubies": "Rubies",
-  "item.firstmod.raw_rubies": "Raw Rubies",
-  "block.firstmod.rubyblock": "Block Of Rubies",
-  "creativetab.rubies_items": "Rubies Tab"
+  "item.firstmod.titanium_ingot": "Titanium Ingot",
+  "item.firstmod.rawruby": "Raw Rubies",
+  "block.firstmod.titanium_block": "Block Of Titanium",
+  "block.firstmod.titanium_ore": "Titanium Ore",
+  "creativetab.titanium_tab": "Titanium Tab"
 }

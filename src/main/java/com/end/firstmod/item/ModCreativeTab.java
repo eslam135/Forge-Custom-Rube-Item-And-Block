@@ -14,13 +14,14 @@ public class ModCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> rubies_items = CREATIVE_MOD_TAB.register("rubiestab",
-            () -> CreativeModeTab.builder().title(Component.translatable("creativetab.rubies_items")).
-                    icon(() -> new ItemStack(NewItems.RUBIES.get()))
+    public static final RegistryObject<CreativeModeTab> rubies_items = CREATIVE_MOD_TAB.register("titanium_tab",
+            () -> CreativeModeTab.builder().title(Component.translatable("creativetab.titanium_tab")).
+                    icon(() -> new ItemStack(NewItems.TITANIUM_INGOT.get()))
                     .displayItems(((pParameters, pOutput) -> {
-                        pOutput.accept(NewItems.RUBIES.get());
-                        pOutput.accept(NewItems.RAW_RUBIES.get());
-                        pOutput.accept(ModBlocks.RUBY_BLOCK.get());
+                        pOutput.accept(NewItems.TITANIUM_INGOT.get());
+                        pOutput.accept(NewItems.RAW_TITANIUM.get());
+                        pOutput.accept(ModBlocks.TITANIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.TITANIUM_ORE.get());
                     }))
                     .build());
 

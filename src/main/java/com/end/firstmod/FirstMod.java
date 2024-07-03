@@ -60,8 +60,8 @@ public class FirstMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-            event.accept(NewItems.RUBIES);
-            event.accept(NewItems.RAW_RUBIES);
+            event.accept(NewItems.TITANIUM_INGOT);
+            event.accept(NewItems.RAW_TITANIUM);
         }
     }
 
